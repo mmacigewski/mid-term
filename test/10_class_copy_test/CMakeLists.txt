@@ -1,0 +1,3 @@
+add_executable(10_class_copy_test "class_copy_test.cpp")
+target_link_libraries(10_class_copy_test 10_class_copy_library)
+add_test(NAME 10_class_copy_test COMMAND 10_class_copy_test -s)

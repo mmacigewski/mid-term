@@ -1,0 +1,3 @@
+add_executable(03_decisions_switch_test "decisions_switch_test.cpp")
+target_link_libraries(03_decisions_switch_test 03_decisions_switch_library)
+add_test(NAME 03_decisions_switch_test COMMAND 03_decisions_switch_test -s)

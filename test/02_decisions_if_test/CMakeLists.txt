@@ -1,0 +1,3 @@
+add_executable(02_decisions_if_test "decisions_if_test.cpp")
+target_link_libraries(02_decisions_if_test 02_decisions_if_library)
+add_test(NAME 02_decisions_if_test COMMAND 02_decisions_if_test -s)

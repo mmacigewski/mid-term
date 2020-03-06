@@ -1,0 +1,3 @@
+add_executable(01_expressions_test "expressions_test.cpp")
+target_link_libraries(01_expressions_test 01_expressions_library)
+add_test(NAME 01_expressions_test COMMAND 01_expressions_test -s)

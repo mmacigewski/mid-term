@@ -1,0 +1,3 @@
+add_executable(09_class_basics_test "class_basics_test.cpp")
+target_link_libraries(09_class_basics_test 09_class_basics_library)
+add_test(NAME 09_class_basics_test COMMAND 09_class_basics_test -s)

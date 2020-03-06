@@ -1,0 +1,3 @@
+add_executable(07_function_value_params_test "function_value_params_test.cpp")
+target_link_libraries(07_function_value_params_test 07_function_value_params_library)
+add_test(NAME 07_function_value_params_test COMMAND 07_function_value_params_test -s)

@@ -1,0 +1,3 @@
+add_executable(05_loops_strings_test "loops_strings_test.cpp")
+target_link_libraries(05_loops_strings_test 05_loops_strings_library)
+add_test(NAME 05_loops_strings_test COMMAND 05_loops_strings_test -s)
