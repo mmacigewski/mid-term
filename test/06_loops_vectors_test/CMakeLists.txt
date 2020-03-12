@@ -1,3 +1,3 @@
 add_executable(06_loops_vectors_test "loops_vectors_test.cpp")
-target_link_libraries(06_loops_vectors_test 06_loops_vectors_library)
+target_link_libraries(06_loops_vectors_test 06_loops_vectors_library 02_decisions_if_library)
 add_test(NAME 06_loops_vectors_test COMMAND 06_loops_vectors_test -s)
