@@ -12,15 +12,26 @@ call get_fibonacci function and display the output.
 int main() 
 {
 	int option{ 0 };
-	std::string fib{ "" };
+	std::string fib{ "" }, sContinue{""};
 	bool isRunning{ true };
 
-	cout << "Enter a number: ";
-	cin >> option;
+	while (isRunning)
+	{
 
-	fib = get_fibonacci(option);
+		cout << "Enter a number: ";
+		cin >> option;
 
-	cout << "Fibonacci number:" << fib;
+		fib = get_fibonacci(option);
+
+		cout << "Fibonacci number:" << fib;
+
+		cout << "\n\nDo you want to continue(y/n): ";
+		cin >> sContinue;
+		cout << "\n";
+
+		isRunning = sContinue == "n" ? false : true;
+
+	}
 
 	return 0;
 }
