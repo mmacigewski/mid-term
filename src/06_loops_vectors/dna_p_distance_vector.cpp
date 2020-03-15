@@ -1,5 +1,7 @@
 ﻿//Write include statements
-
+#include "dna_p_distance_vector.h"
+#include "dna_p_distance.h"
+#include <iostream>
 
 /*
 For two strings s1 and s2 of equal length, the p-distance between them is the
@@ -40,3 +42,21 @@ Sample vector of doubles output
 
 Write code for get_dna_p_distance_vector
 */
+
+std::vector<double> get_dna_p_distance_vector(const std::vector<std::string>& strVec)
+{
+    std::vector<double> result;
+
+    for (int i = 0; i < strVec.size(); ++i)
+    {
+        std::cout << "Index " << i << ": " << strVec[i] << "\n";
+
+        result.push_back(get_dna_p_distance(strVec[0], strVec[i]));
+        result.push_back(get_dna_p_distance(strVec[1], strVec[i]));
+        result.push_back(get_dna_p_distance(strVec[2], strVec[i]));
+        result.push_back(get_dna_p_distance(strVec[3], strVec[i]));
+
+    }
+
+    return result;
+}

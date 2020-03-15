@@ -1,5 +1,5 @@
 //write includes
-
+#include "value_params.h"
 
 
 /*
@@ -8,3 +8,11 @@ In the function use a for ranged loop with auto (value) variable, for(auto n: nu
 change the value in the for loop code to some other number
 
 */
+
+void get_value_params(std::vector<int> params)
+{
+	for (auto value : params)
+	{
+		value = 6;
+	}
+}

@@ -15,5 +15,5 @@ and
 TEST_CASE("Test get_fibonacci function")
 {
 	REQUIRE(get_fibonacci(10) == "0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55");
-	REQUIRE(get_fibonacci(10) == "0, 1, 1, 2, 3, 5");
+	REQUIRE(get_fibonacci(5) == "0, 1, 1, 2, 3, 5");
 }

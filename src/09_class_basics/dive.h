@@ -19,3 +19,17 @@ Assume users will always give you good data, there's no need for data validation
 TIP: Use int and /or double data types where appropriate.
 FOCUS ON CREATING THE CLASS STRUCTURE.
 */
+
+class Dive
+{
+public:
+
+	Dive(int depth, int startPres, int FinalPres, int time) : d(depth), s(startPres), f(FinalPres), t(time) {}
+
+	double get_sacr();
+
+private:
+
+	int d{ 0 }, s{ 0 }, f{ 0 }, t{ 0 };
+
+};
